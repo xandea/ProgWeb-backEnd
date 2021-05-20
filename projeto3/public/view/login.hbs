@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<<<<<<< HEAD:projeto3/public/mvc/view/login.hbs
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/login.css">
+    <title>Login</title>
+</head>
+<body id="bodySing">
+    <div id="container">
+        <img src="../../style/image/logoLogin.svg" id="logoTipo" alt="logo"/>
+        <form action="/login" method="POST">
+        
+            <div id = "containerInputs">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email">
+=======
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./view/style/login.css">
+        <link rel="shortcut icon" type="image/x-icon" href="https://www.paypalobjects.com/webstatic/icon/favicon.ico">
+        <title>Teste</title>
+    </head>
+ <body className="bodySingIn">
+        <div className="container">
+            <img src="./view/image/logoLogin.svg" className="logoTipo" alt="logo"/>
+            <div className="containerInputs">
+                <input
+                className="input" 
+                type="email" 
+                name="email"
+                placeholder="e-mail"
+                onChange={onChangeEmail}
+                />
+                <input
+                className="input"  
+                type="password" 
+                name="senha"
+                placeholder="senha"
+                onChange={onChangePassword}
+                />
+>>>>>>> 0a1f766099c0fc1114d76ecaa08eab4592a5a77c:projeto3/public/view/login.hbs
+            </div>
+
+            <div id = "containerInputs">
+                <label for="senha">Senha</label>
+                <input type="text" id="senha" name="senha">
+            </div>
+
+            <div id="containerButton">     
+                <input id="button" type="submit" name="enviar" value="Entrar"/>
+            </div>
+
+        </form>
+
+        <div id="alternativeContainer">
+            <span id="alternative">ou</span>       
+        </div>
+
+        <div id="containerButtonCadastrar">
+            <button id="button" onclick="window.location.href='/registro'">Cadastrar-se</button>
+        </div>
+        
+        <div id="erroContainerAparecer">Erro</div>
+
+    </div>
+</body>
+</html>

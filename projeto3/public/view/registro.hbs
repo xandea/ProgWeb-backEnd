@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./view/style/login.css">
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.paypalobjects.com/webstatic/icon/favicon.ico">
+    <title>Registrar</title>
+</head>
+<body id="bodySing">
+    <div id="container">
+    <img src="./view/image/logoLogin.svg" id="logoTipo" alt="logo"/>
+    <form action="/registro" method="POST">
+        <div id = "containerInputs">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email">
+        </div>
+
+        <div id = "containerInputs">
+            <label for="senha">Senha</label>
+            <input type="text" id="senha" name="senha">
+        </div>
+
+        <div id="containerButton">     
+            <input id="button" type="submit" name="enviar" value="Cadastrar"/>
+        </div>
+    </form>
+
+    <div id="alternativeContainer">
+        <span id="alternative">ou</span>       
+    </div>
+
+    <div id="containerButtonCadastrar">
+        <button id="button" onclick="window.location.href='/login'">Voltar</button>
+    </div>
+
+    </div>
+    
+</body>
+</html>
